@@ -7,12 +7,16 @@
     <title>Homework Anna Kasianenko</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <header class="header">
-        <a class="logo link" href="#"><span>Web</span>Studio</a>
+        <div class="header-container container">
+            <a class="logo link" href="#"><span>Web</span>Studio</a>
         <nav class="navigation">
             <ul class="nav-list list">
                 <li class="nav-list-item"><a class="nav-list-link link current" href="./index.html">Студиа</a></li>
@@ -24,16 +28,18 @@
                 <li class="contact-links-list-item"><a class="contact-links-list-link link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li class="contact-links-list-item"><a class="contact-links-list-link link" href="tel:+380961111111">+38 096 111 11 11</a></li>
             </ul>
+        </div>
     </header>
      <!-- HERO -->
     <main>
         <section class="hero">
             <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-            <button type="button" class="hero_button">Заказать услугу</button>
+            <button type="button" class="hero-button">Заказать услугу</button>
         </section>
     <!-- ABOUT US -->
         <section class="about">
-            <h2 hidden>Что для нас главное в работе</h2>
+            <div class="container">
+                <h2 hidden>Что для нас главное в работе</h2>
             <ul class="about-list list">
                 <li class="about-item">
                     <h3 class="about-item-title">Внимание к деталям</h3>
@@ -52,17 +58,23 @@
                     <p class="about-text-item">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+            </div>
+        </section>
     <!-- OUR WORK -->
-            <h2 class="title title-theme-dark">Чем мы занимаемся</h2>
+    <section class="section-service">
+        <div class="container">
+            <h2 class="title-theme-dark">Чем мы занимаемся</h2>
             <ul class="work-gallery-list list">
                 <li class="work-gallery-item"><img src="./img/process/img-first.jpg" alt="Coding" width="370" height="294"></li>
                 <li class="work-gallery-item"><img src="./img/process/img-second.jpg" alt="Search information" width="370" height="294"></li>
                 <li class="work-gallery-item"><img src="./img/process/img-third.jpg" alt="Choose Color" width="370" height="294"></li>            
             </ul>
+        </div>
         </section>
     <!--OUR TEAM -->
         <section class="employees-section">
-            <h2 class="title title-theme-dark">Наша команда</h2>
+            <div class="container">
+                <h2 class="title-theme-dark">Наша команда</h2>
             <ul class="employees list">
                 <li class="employees-card">
                     <img class="employees-photo" src="./img/team/designer.jpg" alt="Product Designer" width="270" height="260">
@@ -85,17 +97,20 @@
                     <p class="employees-position" lang="en">UI Designer</p>
                 </li>
             </ul>
+            </div>
         </section>
     </main>
     <footer class="footer">
-        <a class="footer-logo link" href="#"><span>Web</span>Studio</a>
-        <address class="contact-info">
-        <p class="address-info">г. Киев, пр-т Леси Украинки, 26</p>
-        <ul class="contact-info-list list">
-            <li><a href="mailto:info@devstudio.com" class="contact-list-link link">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111" class="contact-list-link link">+38 096 111 11 11</a></li>
-        </ul>
-    </address>
+        <div class="container">
+            <a class="footer-logo link" href="#"><span>Web</span>Studio</a>
+            <address class="contact-info">
+            <p class="address-info">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="contact-info-list list">
+                <li><a href="mailto:info@devstudio.com" class="contact-list-link link">info@devstudio.com</a></li>
+                <li><a href="tel:+380961111111" class="contact-list-link link">+38 096 111 11 11</a></li>
+            </ul>
+            </address>
+        </div>
     </footer>
 </body>
 </html>
