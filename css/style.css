@@ -77,7 +77,9 @@ address {
     font-weight: 500;
   }
 .header{
-    border: 1px solid #ECECEC;
+    border-bottom: 1px solid #ECECEC;
+    padding-top: 25px;
+    padding-bottom: 25px;
 }
 .header-container{
     display: flex;
@@ -85,8 +87,6 @@ address {
   }
 .nav-list{
     display: flex;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 .nav-list-item:not(:last-child){
     margin-right: 50px;
@@ -105,12 +105,9 @@ address {
 .contact-links-list{
     display: flex;
     margin-left: auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
 }
 .contact-links-list-link{
     display: block;
-    margin-left: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -123,6 +120,9 @@ address {
 }
 .contact-links-list-item{
     display: block;
+}
+.contact-links-list-item:not(:last-child){
+    margin-right: 50px;
 }
 /* ========= END HEADER ========= */
 
@@ -177,14 +177,13 @@ address {
 .about-item-title{
     margin-bottom: 10px;
     line-height: 1.14;
-    height: 16px;
     font-weight: 700;
     text-transform: uppercase;
 }
 .about-text-item{
     line-height: 1.71;
     color: var(--second-text-color);
-    height: 75px;
+    width: 270px;
 }
 /* ========= END ABOUT US ========= */
 
@@ -229,17 +228,17 @@ address {
 .employees-card:not(:last-child){
     margin-right: 30px;
 }
-.employees-photo{
-    margin-bottom: 30px;
+.employee-wrap{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
-    .employees-name{
+.employees-name{
     margin-bottom: 10px;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     }
-    .employees-position{
-    margin-bottom: 30px;
+.employees-position{
     font-size: 16px;
     line-height: 1.18;
     color: var(--second-text-color);
@@ -257,7 +256,7 @@ address {
     font-family: var(--secondary-font-family);
     font-weight: 700;
     font-size: 26px;
-    line-height: 1.92;
+    line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--white-text-color);
     margin-bottom: 20px;
@@ -273,14 +272,15 @@ address {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--white-text-color);
-    margin-bottom: 9px;
-
 }
 .contact-list-link{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+}
+.contact-info-list li:not(:last-child){
+    margin-bottom: 9px;
 }
 .contact-list-link:hover,
 .contact-list-link:focus{
