@@ -171,6 +171,9 @@ address {
 .about-list{
     display: flex;
 }
+.about-item{
+    width: 270px;
+}
 .about-item:not(:last-child){
     margin-right: 30px;
 }
@@ -183,7 +186,6 @@ address {
 .about-text-item{
     line-height: 1.71;
     color: var(--second-text-color);
-    width: 270px;
 }
 /* ========= END ABOUT US ========= */
 
