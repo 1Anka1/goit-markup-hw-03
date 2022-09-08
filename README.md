@@ -16,7 +16,7 @@
 «A7» The code is in line with the guide.
 
 # Styling
-«B1» Global style reset is allowed using tag selector for such elements as <h1>...<h6>, <p> and <ul>.
+«B1» Global style reset is allowed using tag selector for such elements as h1..h6, p and ul.
 
 «B2» Elements have no margins (margin property) that "break through" the parent element.
 
@@ -34,7 +34,7 @@
 
 «B9» The "container" contains the header, footer and section content. That is, they are inside it.
 
-«B10» Flexbox is used to arrange elements, but only where necessary. For example, in the header, navigation, lists in sections, etc., that is, where it is impossible to arrange elements horizontally in a customized way.
+«B10» Flexbox is used to arrange elements, but only where necessary. 
 
 «B11» Final box sizes in the browser match the layout.
 
